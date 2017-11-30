@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">增量更新Demo</string>
+    <string name="download_progress">%1$d/%2$d</string>
+</resources>
