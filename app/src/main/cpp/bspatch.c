@@ -212,7 +212,7 @@ int patchMethod(int argc, char *argv[]) {
 }
 
 JNIEXPORT jint JNICALL
-Java_com_clou_logistics_diffdemo_BsPatch_bspatch(JNIEnv *env, jclass type, jstring oldApk_,
+Java_com_itzyf_incrementdemo_BsPatch_bspatch(JNIEnv *env, jclass type, jstring oldApk_,
                                                  jstring newApk_, jstring patch_) {
 
     const char *oldApk = (*env)->GetStringUTFChars(env, oldApk_, 0);

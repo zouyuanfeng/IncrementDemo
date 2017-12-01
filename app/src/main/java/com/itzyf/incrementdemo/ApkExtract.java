@@ -17,19 +17,17 @@ public class ApkExtract {
         context = context.getApplicationContext();
         ApplicationInfo applicationInfo = context.getApplicationInfo();
         String apkPath = applicationInfo.sourceDir;
-        Log.d("hongyang", apkPath);
         return apkPath;
     }
 
     public static int getAppVersionCode(Context context) {
         int versioncode = 0;
         try {
-            // ---get the package info---
             PackageManager pm = context.getPackageManager();
             PackageInfo pi = pm.getPackageInfo(context.getPackageName(), 0);
             versioncode = pi.versionCode;
         } catch (Exception e) {
-            Log.e("VersionInfo", "Exception", e);
+            e.printStackTrace();
         }
         return versioncode;
     }
